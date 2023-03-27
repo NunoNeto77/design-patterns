@@ -22,3 +22,9 @@ class WeatherSubject : Subject {
         observers.forEach { it.updateWeather(state) }
     }
 }
+
+fun printObservers() {
+        for (observer in observers) {
+            println(observer)
+        }
+    }
